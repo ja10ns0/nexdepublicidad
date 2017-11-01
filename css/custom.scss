@@ -64,9 +64,6 @@ ul.navbar-nav {
 
 .header {
 	background-color: #f07d00;
-	.col-sm-4 {
-		
-	}
 	.col-sm-8 {
 		padding: 25px 15px;
 		text-align: justify;
@@ -229,9 +226,18 @@ section {
 		.anuarios,.construccion,.paisajismo,.diseno,.internacional,.culturales {
 			display:none;
 		}
+		.current {
+			color: #f07d00;
+		}
+	}
+
+	#contact-section {
+      #map {
+		  min-height: 600px;
+	  }
 	}
 }
-
+   
 .right {
 	text-align: right;
 }
