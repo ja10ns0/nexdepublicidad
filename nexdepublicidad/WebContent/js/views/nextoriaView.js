@@ -5,11 +5,15 @@ var Nexapp = Nexapp || {};
 
 Nexapp.NextoriaView = Backbone.View.extend({
     
-    className: 'section',
-    
     controller: null,
+    id: 'nextoria-section',
+    renderCallback : null,
     
     template : Nexapp.getTemplate('nextoriaView'),
+    
+    events : {
+	'click li': 'changeGrid'
+    },
 
     initialize : function(options) {
 	this.controller = options.controler;
@@ -18,6 +22,16 @@ Nexapp.NextoriaView = Backbone.View.extend({
 
     render : function() {
 	this.$el.html(this.template());
+    },
+    
+    changeGrid: function(e) {
+	var tipo = $(e.target).data('tipo');
+	$('.current')
+		.fadeOut()
+		.toggleClass('current');
+	$('.'+tipo)
+        	.fadeIn()
+		.toggleClass('current');
     }
 
 });  

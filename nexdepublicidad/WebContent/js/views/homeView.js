@@ -1,11 +1,12 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.HomeView = Backbone.View.extend({
+Nexapp.HomeView = Backbone.View.extend({
 
     controller: null,
+    id: 'home-section',
     
     template : Nexapp.getTemplate('homeView'),
 

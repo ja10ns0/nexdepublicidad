@@ -1,31 +1,53 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.Router = Backbone.Router.extend({
+Nexapp.Router = Backbone.Router.extend({
     
-    currentSectionView: null,
+    currentSection: null,
     
     routes: {
-	'section/:section' : 'loadSection',
+	':section' : 'loadSection',
+	'*path'	   : 'init'
     },
     
     initialize: function(options) {
-	this.navbarView = new app.NavbarView({controller:this});
-	this.aboutView = new app.AboutView({controller:this});
-	this.contactView = new app.ContactView({controller:this});
-	this.homeView = new app.HomeView({controller:this});
-	this.footerView = new app.FooterView({controller:this});
-	this.appView = new app.AppView({controller:this});
-	
-	this.currentSectionView = this.homeView;
+	// navigation bar
+	this.navbarView = new Nexapp.NavbarView({controller:this});
+	// footer
+	this.footerView = new Nexapp.FooterView({controller:this});
+	// events subscription
+	this.listenTo(Nexapp.EventBus,'nexapp:changeLanguage',this.loadSection)
     },
   
-    loadSection: function(section){
-	this.currentSectionView.remove();
-	this.currentSectionView = this[section+'View'];
-	$('section').html(this[section+'View'].el);
+    loadSection: function(section, language){
+	Nexapp.language = language || Nexapp.language;
+	// remove current section
+	if(this.currentSection){
+	    this.currentSection.remove();
+	};
+	// setting current section
+	this.currentSection = new Nexapp[section + 'View']({controller:this});
+	// rendering current section
+	$('section').html(this.currentSection.el);
+	// callback
+	this._loadSectionCallback(this.currentSection);
+	// fix layout
+	this._applyStyles(section);
+    },
+    
+    init: function() {
+	this.loadSection('Home');
+    },
+    
+    _applyStyles: function(section) {
+	var selectors = $('nav,#navbar,footer');
+	(section == 'Home') ? selectors.addClass('transparent') : selectors.removeClass('transparent');
+    },
+    
+    _loadSectionCallback : function(section) {
+	return section.renderCallback ? section.renderCallback() : false ;
     }
     
 });

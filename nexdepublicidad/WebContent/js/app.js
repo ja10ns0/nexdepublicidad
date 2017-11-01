@@ -1,9 +1,9 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
 $(function() {
-    app.Router = new app.Router();
+    Nexapp.Router = new Nexapp.Router();
     Backbone.history.start();;
 })

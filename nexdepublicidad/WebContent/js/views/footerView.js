@@ -1,21 +1,21 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.FooterView = Backbone.View.extend({
-
-    className : 'container',
-    controller: null,
-
-    template : _.template($('#footer-template').html()),
+Nexapp.FooterView = Backbone.View.extend({
+    
+    el : 'footer',
+    
+    template : Nexapp.getTemplate('footerView'),
 
     initialize : function(options) {
-	this.render();
+	    this.controller = options.controller;
+	    this.render();
     },
 
     render : function() {
-	this.$el.html(this.template());
+	    this.$el.html(this.template());
     }
 
 });
