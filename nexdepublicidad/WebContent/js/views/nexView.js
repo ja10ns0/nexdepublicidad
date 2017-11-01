@@ -1,13 +1,14 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.AboutView = Backbone.View.extend({
-
-    controller: null,
+Nexapp.NexView = Backbone.View.extend({
     
-    template : _.template($('#about-template').html()),
+    controller: null,
+    id: 'nex',
+    
+    template : Nexapp.getTemplate('nexView'),
 
     initialize : function(options) {
 	this.controller = options.controler;

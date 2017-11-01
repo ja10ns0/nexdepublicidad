@@ -1,13 +1,13 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.NavbarView = Backbone.View.extend({
+Nexapp.NavbarView = Backbone.View.extend({
 
     className : 'container',
 
-    template : _.template($('#navbar-template').html()),
+    template : Nexapp.getTemplate('navbarView'),
 
     events : {
 	'click li' : 'prueba'

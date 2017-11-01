@@ -1,13 +1,15 @@
 /**
  * 
  */
-var app = app || {};
+var Nexapp = Nexapp || {};
 
-app.HomeView = Backbone.View.extend({
-
+Nexapp.NextoriaView = Backbone.View.extend({
+    
+    className: 'section',
+    
     controller: null,
     
-    template : Nexapp.getTemplate('homeView'),
+    template : Nexapp.getTemplate('nextoriaView'),
 
     initialize : function(options) {
 	this.controller = options.controler;
@@ -18,4 +20,4 @@ app.HomeView = Backbone.View.extend({
 	this.$el.html(this.template());
     }
 
-});
+});  
