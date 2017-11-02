@@ -12,7 +12,8 @@ Nexapp.NextoriaView = Backbone.View.extend({
     template: Nexapp.getTemplate('nextoriaView'),
 
     events: {
-        'click li': 'changeGrid'
+        'click li': 'changeGrid',
+        'click .row:not(.subheader) div[class^=col-]': 'openModal'
     },
 
     initialize: function (options) {
@@ -25,18 +26,19 @@ Nexapp.NextoriaView = Backbone.View.extend({
     },
 
     changeGrid: function (e) {
-        this.$el.find('.current').toggleClass('current');
-        var currentType = this.$el.find('.current').data('tipo');
-        $('.'+currentType).hide();
+        // current type
+        var currentType = this.$el.find('.current');
+        // hide current type
+        $('.row.' + currentType.data('tipo')).hide();
+        // toogle current type class
+        currentType.toggleClass('current');
         $(e.currentTarget).toggleClass('current');
-        var tipo = $(e.target).data('tipo');
-        // // delete current class
-        // $('.current')
-        //     .toggleClass('current');
-        // // add
-        // $('.' + tipo)
-        //     .fadeIn()
-        //     .toggleClass('current');
+        // show clicked type 
+        $('.row.' + $(e.target).data('tipo')).show();
+    },
+
+    openModal: function (e) {
+        $('#myModal').modal();
     }
 
 });  
