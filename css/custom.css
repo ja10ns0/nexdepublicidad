@@ -236,4 +236,23 @@ div.prueba2 {
   div.prueba2 .dcha {
     background-color: grey; }
 
+/* line 283, custom.scss */
+#nextoriaModal .modal-content {
+  border-radius: 2px; }
+/* line 287, custom.scss */
+#nextoriaModal .nextoriaModal_info h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+/* line 291, custom.scss */
+#nextoriaModal .nextoriaModal_info .edition, #nextoriaModal .nextoriaModal_info .leadership {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold; }
+/* line 298, custom.scss */
+#nextoriaModal .modal-footer span {
+  cursor: pointer; }
+  /* line 300, custom.scss */
+  #nextoriaModal .modal-footer span#prev {
+    float: left; }
+
 /*# sourceMappingURL=custom.css.map */

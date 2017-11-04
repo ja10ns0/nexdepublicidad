@@ -278,3 +278,28 @@ div.prueba2{
 		background-color: grey;
 	}
 }
+
+#nextoriaModal {
+	.modal-content {
+		border-radius: 2px;
+	}
+	.nextoriaModal_info {
+		h2 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+		.edition,.leadership {
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	.modal-footer {
+		span{
+			cursor: pointer;
+			&#prev {
+				float: left;
+			}
+		}
+	}
+}
