@@ -209,9 +209,6 @@ section {
 				font-weight: bold;
 				margin-bottom: 5px;
 			}
-			p.features_text {
-			
-			}
 		}
 	}
 	
@@ -221,7 +218,7 @@ section {
 		.row{
 			margin: 50px 0;
 		}
-		.anuarios,.construccion,.paisajismo,.diseno,.internacional,.culturales {
+		#anuarios,#construccion,#paisajismo,#diseno,#internacional,#culturales {
 			display:none;
 		}
 		.current {

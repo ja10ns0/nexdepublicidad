@@ -10,7 +10,7 @@
 			<div class="col-sm-12 tcenter">
 				<ul class="list-inline">
 					<li data-tipo="arquitectura" class="current">arquitectura</li>
-					<li data-tipo=anuarios>anuarios</li>
+					<li data-tipo="anuarios">anuarios</li>
 					<li data-tipo="construccion">construccion</li>
 					<li data-tipo="paisajismo">paisajismo</li>
 					<li data-tipo="diseno">diseño</li>
@@ -19,7 +19,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row arquitectura">
+		<div id="arquitectura" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/GRID_COAM_1.jpg" alt="" class="img-responsive " />
 			</div>
@@ -81,7 +81,7 @@
 				<img src="/assets/img/arquitectura/GRID_PROUN.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row anuarios">
+		<div id="anuarios" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/anuarios/FULL_GRID_CSAE_ANUARIO_1.jpg" alt="" class="img-responsive " />
 			</div>
@@ -89,7 +89,7 @@
 				<img src="/assets/img/anuarios/FULL_GRID_CSAE_ANUARIO_2.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row construccion">
+		<div id="construccion" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/construccion/GRID_CAU.jpg" alt="" class="img-responsive " />
 			</div>
@@ -97,12 +97,12 @@
 				<img src="/assets/img/construccion/GRID_CERCHA.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row paisajismo">
+		<div id="paisajismo" class="row">
 			<div class="col-xs-6 col-sm-4">
-				<img src="/assets/img/paisajismo/GRID_PAISEA.jpg" alt="" class="img-responsive " />
+				<img id="paisea" src="/assets/img/paisajismo/GRID_PAISEA.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row diseno">
+		<div id="diseno" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/diseño/GRID_ARDI.jpg" alt="" class="img-responsive " />
 			</div>
@@ -110,7 +110,7 @@
 				<img src="/assets/img/diseño/GRID_DEDISENO.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row internacional">
+		<div id="internacional" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/internacional/GRID_BUILD.jpg" alt="" class="img-responsive " />
 			</div>
@@ -118,7 +118,7 @@
 				<img src="/assets/img/internacional/GRID_COMPASSES.jpg" alt="" class="img-responsive " />
 			</div>
 		</div>
-		<div class="row culturales">
+		<div id="culturales" class="row">
 			<div class="col-xs-6 col-sm-4">
 				<img src="/assets/img/culturales/GRID_DEUSTO.jpg" alt="" class="img-responsive " />
 			</div>
@@ -141,34 +141,26 @@
 	</div>
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 </div>
-<div id="myModal" class="modal fade" role="dialog">
+<div id="nextoriaModal" class="modal fade" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Arquitectura</h4>
+				<h4 class="modal-title"></h4>
 			</div>
 			<div class="modal-body">
-				<div class="">
-					<img src="/assets/img/internacional/GRID_BUILD.jpg" alt="" class="img-responsive " />
+				<div class="nextoriaModal_img">
+					<img src="" alt="" class="img-responsive " />
 				</div>
-				<div class="">
-					<div class="features">
-						<p class="features_title">
-							Edicion
-						</p>
-						<p class="features_text">
-							Colegio Oficial de Arquitectos de Madrid COAM
-						</p>
+				<div class="nextoriaModal_info">
+					<div class="">
+						<p class="title"></p>
+						<p class="text"></p>
 					</div>
-					<div class="features">
-						<p class="features_title">
-							Dirección:
-						</p>
-						<p class="features_text">
-							Jerónimo Junquera / Estanislao Pérez Pita
-						</p>
+					<div class="">
+						<p class="title"></p>
+						<p class="text"></p>
 					</div>
 				</div>
 			</div>

@@ -1,66 +1,92 @@
+/* line 1, custom.scss */
 html {
   position: relative;
   min-height: 100%; }
 
+/* line 6, custom.scss */
 body {
   font-family: 'Open Sans', sans-serif; }
 
+/* line 10, custom.scss */
 .navbar {
   margin-bottom: 0px; }
 
+/* line 14, custom.scss */
 .navbar-default {
   border-color: #f07d00; }
+  /* line 18, custom.scss */
   .navbar-default .container {
     padding: 25px 15px; }
+    /* line 22, custom.scss */
     .navbar-default .container .navbar-header .navbar-brand {
       padding: 0 0 0 10px;
       margin: 0 0 0 15px; }
+      /* line 25, custom.scss */
       .navbar-default .container .navbar-header .navbar-brand img {
         height: 50px; }
+    /* line 31, custom.scss */
     .navbar-default .container .navbar-collapse {
       border: none; }
+    /* line 35, custom.scss */
     .navbar-default .container .navbar-nav > li > a {
       color: #f07d00; }
+    /* line 39, custom.scss */
     .navbar-default .container .navbar-nav li.languages {
       display: inline-flex; }
+    /* line 44, custom.scss */
     .navbar-default .container .navbar-toggle {
       border-color: transparent; }
+      /* line 46, custom.scss */
       .navbar-default .container .navbar-toggle:hover, .navbar-default .container .navbar-toggle:focus {
         background-color: transparent; }
+      /* line 49, custom.scss */
       .navbar-default .container .navbar-toggle .icon-bar {
         background-color: #f07d00; }
 
+/* line 57, custom.scss */
 .transparent {
   background-color: transparent; }
 
+/* line 61, custom.scss */
 ul.navbar-nav {
   float: right; }
 
+/* line 65, custom.scss */
 .header {
   background-color: #f07d00; }
+  /* line 67, custom.scss */
   .header .col-sm-8 {
     padding: 25px 15px;
     text-align: justify; }
+    /* line 70, custom.scss */
     .header .col-sm-8 .col-sm-4 {
       text-align: center; }
+    /* line 74, custom.scss */
     .header .col-sm-8 a:link, .header .col-sm-8 a:visited, .header .col-sm-8 a:hover, .header .col-sm-8 a:active {
       color: #333333;
       text-decoration: none; }
+    /* line 78, custom.scss */
     .header .col-sm-8 a[href^=tel], .header .col-sm-8 a[href^=mailto] {
       color: #333333;
       text-decoration: none; }
+    /* line 82, custom.scss */
     .header .col-sm-8 a[href^=tel] {
       cursor: text; }
 
+/* line 90, custom.scss */
 .content {
   background-color: white; }
+  /* line 93, custom.scss */
   .content .team-member {
     border: 20px solid transparent; }
+  /* line 97, custom.scss */
   .content .team-name {
     text-align: center; }
+  /* line 101, custom.scss */
   .content .logo {
     height: 100px; }
 
+/* line 106, custom.scss */
 .home-section {
   height: 100vh;
   position: absolute;
@@ -70,14 +96,18 @@ ul.navbar-nav {
   /* background:linear-gradient(to right, rgba(255, 0, 0, 0.39), rgba(234, 119, 0, 0.45)),url(../assets/img/nex-background@2x.png); */
   background-size: cover;
   background-color: grey; }
+  /* line 117, custom.scss */
   .home-section .slogan {
     color: white; }
+    /* line 120, custom.scss */
     .home-section .slogan h1 {
       /* font-size:50px; */ }
 
+/* line 127, custom.scss */
 .subheader {
   text-align: center; }
 
+/* line 131, custom.scss */
 footer {
   color: #f07d00;
   position: fixed;
@@ -87,90 +117,122 @@ footer {
   bottom: 0;
   background-color: white;
   border-top: 1px solid #f07d00; }
+  /* line 140, custom.scss */
   footer .row {
     margin: 0px; }
+    /* line 142, custom.scss */
     footer .row div:first-child {
       font-size: 12px;
       line-height: 20px; }
+  /* line 147, custom.scss */
   footer a {
     color: #f07d00; }
 
+/* line 152, custom.scss */
 .vcenter {
   min-height: 100%;
   display: flex;
   align-items: center; }
 
+/* line 158, custom.scss */
 .valign {
   display: inline-block;
   vertical-align: middle;
   float: none; }
 
+/* line 164, custom.scss */
 .center-block {
   display: inline-block; }
 
+/* line 168, custom.scss */
 .tcenter {
   text-align: center; }
 
+/* line 172, custom.scss */
 section {
   margin-top: 100px; }
+  /* line 175, custom.scss */
   section #nex-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
+    /* line 178, custom.scss */
     section #nex-section .content .row {
       margin: 50px 0; }
+  /* line 182, custom.scss */
   section #croquis-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
+    /* line 185, custom.scss */
     section #croquis-section .content .row {
       overflow: hidden;
       margin: 50px 0; }
+      /* line 190, custom.scss */
       section #croquis-section .content .row.prices .col-lg-3 {
         text-align: center; }
+      /* line 193, custom.scss */
       section #croquis-section .content .row.prices p.prices_title {
         color: #f07d00;
         font-weight: bold;
         margin-bottom: 5px; }
+      /* line 201, custom.scss */
       section #croquis-section .content .row .valign {
         padding: 15px; }
+    /* line 207, custom.scss */
     section #croquis-section .content .features p.features_title {
       border-bottom: 1px solid #f07d00;
       font-weight: bold;
       margin-bottom: 5px; }
+  /* line 215, custom.scss */
   section #nextoria-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
+    /* line 218, custom.scss */
     section #nextoria-section .content .row {
       margin: 50px 0; }
-    section #nextoria-section .content .anuarios, section #nextoria-section .content .construccion, section #nextoria-section .content .paisajismo, section #nextoria-section .content .diseno, section #nextoria-section .content .internacional, section #nextoria-section .content .culturales {
+    /* line 221, custom.scss */
+    section #nextoria-section .content #anuarios, section #nextoria-section .content #construccion, section #nextoria-section .content #paisajismo, section #nextoria-section .content #diseno, section #nextoria-section .content #internacional, section #nextoria-section .content #culturales {
       display: none; }
+    /* line 224, custom.scss */
     section #nextoria-section .content .current {
       color: #f07d00; }
+  /* line 230, custom.scss */
   section #contact-section #map {
     min-height: 600px; }
 
+/* line 236, custom.scss */
 .right {
   text-align: right; }
 
+/* line 240, custom.scss */
 .bg-white {
   background-color: white; }
 
+/* line 244, custom.scss */
 .bg-transparent {
   background-color: transparent; }
 
+/* line 252, custom.scss */
 .contact-section .header .col-sm-8 {
   color: red; }
 
 @media (max-width: 767px) {
+  /* line 259, custom.scss */
   .navbar-collapse {
     position: relative;
     top: 25px; } }
+/* line 265, custom.scss */
 div.prueba1 {
   border: 1px solid red; }
 
+/* line 269, custom.scss */
 div.prueba2 {
   border: 1px solid green; }
+  /* line 272, custom.scss */
   div.prueba2 .izda {
     background-color: red;
     height: 100px; }
+  /* line 276, custom.scss */
   div.prueba2 .dcha {
     background-color: grey; }
+
+/*# sourceMappingURL=custom.css.map */
