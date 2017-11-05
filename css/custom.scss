@@ -280,15 +280,23 @@ div.prueba2{
 }
 
 #nextoriaModal {
-	.modal-header {
-		border-bottom: none;
-		.close {
-			color: #f07d00;
-			opacity: 1;
-		}
-	}
+	
 	.modal-content {
 		border-radius: 2px;
+		.modal-header {
+			border-bottom: none;
+			.close {
+				color: #f07d00;
+				opacity: 1;
+			}
+		}
+		.modal-body {
+			.nextoriaModal_info {
+				h2.title_text {
+					color: #f07d00;
+				}
+			}
+		}
 	}
 	.nextoriaModal_info {
 		h2 {

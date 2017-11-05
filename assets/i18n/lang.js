@@ -2,6 +2,11 @@ var Nexapp = Nexapp || {};
 
 Nexapp.i18n_string = {
 	es: {
+		nav_home: 'home',
+		nav_nex: 'nex',
+		nav_croquis: 'el croquis',
+		nav_nextoria: 'nextoria',
+		nav_contact: 'contactanex',
 		clickHere: 'Pulsa aqu&iacute;',
 		nex1: 'Agencia de publicidad de servicios plenos especializada en exclusivas de medios de arquitectura y diseño, arte, '
 		+ 'culturales y medios generales acordes a nuestros estándares de calidad.',
@@ -70,6 +75,11 @@ Nexapp.i18n_string = {
 	},
 
 	en: {
+		nav_home: 'home',
+		nav_nex: 'nex',
+		nav_croquis: 'el croquis',
+		nav_nextoria: 'nextory',
+		nav_contact: 'contactnex',
 		clickHere: 'Click here',
 		nex1: 'Nex is an advertising agency offering complete services with a special focus on exclusive editorial platforms '
 		+ 'in the fields of architecture, design, art, and cultural venues',
