@@ -60,6 +60,13 @@ Nexapp.i18n_string = {
 		contact3: 'Env&iacute;anos un email',
 		nextoria_edition: 'Edici&oacute;n',
 		nextoria_leadership: 'Directores',
+		nextoria_arquitectura: 'arquitectura',
+		nextoria_anuarios: 'anuarios',
+		nextoria_construccion: 'construcci&oacute;n',
+		nextoria_paisajismo: 'paisajismo',
+		nextoria_diseno: 'dise&ntilde;o',
+		nextoria_internacional: 'internacional',
+		nextoria_culturales: 'culturales'
 	},
 
 	en: {
@@ -117,5 +124,12 @@ Nexapp.i18n_string = {
 		contact3: 'Email us at',
 		nextoria_edition: 'Edition',
 		nextoria_leadership: 'Leadership',
+		nextoria_arquitectura: 'architecture',
+		nextoria_anuarios: 'yearbooks',
+		nextoria_construccion: 'construction',
+		nextoria_paisajismo: 'landscaping',
+		nextoria_diseno: 'design',
+		nextoria_internacional: 'international',
+		nextoria_culturales: 'cultural'
 	}
 };

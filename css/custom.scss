@@ -280,6 +280,13 @@ div.prueba2{
 }
 
 #nextoriaModal {
+	.modal-header {
+		border-bottom: none;
+		.close {
+			color: #f07d00;
+			opacity: 1;
+		}
+	}
 	.modal-content {
 		border-radius: 2px;
 	}
@@ -295,10 +302,16 @@ div.prueba2{
 		}
 	}
 	.modal-footer {
-		span{
+		border-top:none;
+		color: #f07d00;
+		span {
 			cursor: pointer;
-			&#prev {
+			&[id='0'] {
 				float: left;
+			}
+			&.disabled {
+				display:none;
+				pointer-events: none;
 			}
 		}
 	}

@@ -58,28 +58,27 @@ Nexapp.NextoriaView = Backbone.View.extend({
         var magazine = NEXTORIA_TYPES[cType][cMag]; 
         // insert content
         this._insertContent(magazine);
+        // check magazine's index
+        this._checkMagazineIndex(cType,cMag);
         // open modal
         $('#nextoriaModal').modal();
     },
 
     slideMag: function(e) {
+        // slide direction
         var direction = +e.currentTarget.id ? 1 : -1;
+        // current type
         var cType = this.currentMagazine.type;
+        // slided index
         var cMag = +this.currentMagazine.index + direction;
+        // update current magazine
         this.currentMagazine.index = cMag;
         // magazine object
         var magazine = NEXTORIA_TYPES[cType][cMag];
         // insert content
         this._insertContent(magazine);
-        // check index
-        var firstMag = _.first(_.keys(NEXTORIA_TYPES[cType]));
-        var lastMag = _.last(_.keys(NEXTORIA_TYPES[cType]));
-        if(cMag == firstMag) {
-            $('span[id=0]').css('color','red');
-        }
-        if(cMag == lastMag) {
-            $('span[id=1]').css('color','red');
-        }
+        // check magazine's index
+        this._checkMagazineIndex(cType,cMag);
     },
 
     _insertContent: function(magazine) {
@@ -87,6 +86,19 @@ Nexapp.NextoriaView = Backbone.View.extend({
         $('.nextoriaModal_info .title_text').html(magazine.title);
         $('.nextoriaModal_info .edition_text').html(magazine.edition);
         $('.nextoriaModal_info .leadership_text').html(magazine.leadership);
+    },
+
+    _checkMagazineIndex: function(cType,cMag) {
+        $('span[id=0],span[id=1]').removeClass('disabled');
+        var firstMag = _.first(_.keys(NEXTORIA_TYPES[cType]));
+        var lastMag = _.last(_.keys(NEXTORIA_TYPES[cType]));
+        if(cMag == firstMag) {
+            $('span[id=0]').toggleClass('disabled');
+        }
+        if(cMag == lastMag) {
+            $('span[id=1]').toggleClass('disabled');
+        }
+
     }
 
 });  
