@@ -14,12 +14,17 @@ Nexapp.NavbarView = Backbone.View.extend({
     events: {
         'click li': 'collapse',
         'click a.lang': 'changeLanguage',
-        'shown.bs.collapse': 'prueba'
+        'show.bs.collapse': 'fadeOutLogo',
+        'hide.bs.collapse': 'fadeInLogo',
+
     },
 
-    prueba: function () {
-        $(this.el).find('.navbar-collapse').css('max-height', '$(window).height()');
-        $(this.el).find('.navbar-collapse').css('height', $(window).height() - $('footer').outerHeight());
+    fadeOutLogo: function () {
+        this.$el.parent().find('section .home-section .logo').fadeOut();
+    },
+
+    fadeInLogo: function () {
+        this.$el.parent().find('section .home-section .logo').fadeIn();
     },
 
     initialize: function (options) {

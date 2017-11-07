@@ -46,6 +46,7 @@ Nexapp.Router = Backbone.Router.extend({
 	_applyStyles: function (section) {
 		var selectors = $('nav,#navbar,footer');
 		(section == 'Home') ? selectors.addClass('transparent') : selectors.removeClass('transparent');
+		$('html,body').scrollTop(0);
 	},
 
 	_loadSectionCallback: function (section) {

@@ -11,6 +11,13 @@ body{
 	margin-bottom: 0px;
 }
 
+.btn-default {
+	background-color: #f07d00;
+	color:rgb(248,248,248);
+	border-radius: 0px;
+	border: none;
+}
+
 .navbar-default {
 	
 	border-color: #f07d00;
@@ -30,6 +37,9 @@ body{
 		
 		.navbar-collapse{
 			border: none;
+			li.languages {
+				text-transform: uppercase;
+			}
 		}
 		
 		.navbar-nav > li > a {
@@ -236,9 +246,16 @@ section {
 			padding-top: 20px;
 			padding-bottom: 50px;
 		}
-      #map {
-		  min-height: 600px;
-	  }
+		#map {
+			min-height: 600px;
+		}
+		a,p {
+			color: #f07d00;
+		}
+		a:hover {
+			color: #f07d00;
+		}
+		
 	}
 }
    

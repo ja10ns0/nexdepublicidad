@@ -22,10 +22,10 @@ Nexapp.CroquisView = Backbone.View.extend({
     },
     
     _afterRender : function() {
-	var img1 = '/assets/img/ctabr2015.png';
-	var img2 = '/assets/img/ctabr2016.png';
-	var img3 = '/assets/img/ctdic2015.png';
-	var img4 = '/assets/img/ctfeb2016.png';
+	var img1 = 'assets/img/ctabr2015.png';
+	var img2 = 'assets/img/ctabr2016.png';
+	var img3 = 'assets/img/ctdic2015.png';
+	var img4 = 'assets/img/ctfeb2016.png';
 
 	var images = [img1,img2,img3,img4];
 	
