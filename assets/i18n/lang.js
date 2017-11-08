@@ -9,24 +9,24 @@ Nexapp.i18n_string = {
 		nav_contact: 'contactanex',
 		clickHere: 'Pulsa aqu&iacute;',
 		nex1: 'Agencia de publicidad de servicios plenos especializada en exclusivas de medios de arquitectura y diseño, arte, '
-		+ 'culturales y medios generales acordes a nuestros estándares de calidad.',
-		nex2: 'Fundada hace más de tres décadas, la agencia de Olga Ortega rompe esquemas en el mundo editorial.',
-		nex3: 'Somos editores de publicidad, no somos meros intermediarios, no nos gusta la palabra comercialización. '
+		+ 'culturales y medios generales acordes a nuestros est&aacute;ndares de calidad.',
+		nex2: 'Fundada hace m&aacute;s de tres d&eacute;cadas, la agencia de Olga Ortega rompe esquemas en el mundo editorial.',
+		nex3: 'Somos editores de publicidad, no somos meros intermediarios, no nos gusta la palabra comercializaci&oacute;n. '
 		+ 'De esta forma, nos involucramos totalmente en las publicaciones, cuidando al máximo y con entusiasmo tanto '
 		+ 'la imagen de nuestros anunciantes, como los enfrentamientos de sus anuncios.',
 		nex4: 'En resumen: Integramos la publicidad en los soportes de nuestra exclusiva, de manera que siempre forma parte '
 		+ 'del contenido global de las revistas',
 		nexSlogan: 'Somos NEX',
-		nexFooterMsg1: 'Mas de 30 a&ntilde;os de experiencia',
+		nexFooterMsg1: 'M&aacute;s de 30 a&ntilde;os de experiencia',
 		nexFooterMsg2: '¿te vienex?',
 		team: 'equipo',
 		croquis1: 'La revista EL CROQUIS, fundada en 1982, es una de las publicaciones de arquitectura de mayor relevancia y prestigio en el sector, '
-		+ 'tanto en el ámbito nacional como en el internacional.',
-		croquis2: 'Publica las obras de mayor interés que se producen en campo de la arquitectura a nivel mundial, así como cuidadas monografías que '
-		+ 'analizan el trabajo de los arquitectos más sobresalientes.',
-		croquis3: 'El contenido de la revista se centra en la publicación, de forma exhaustiva, de los proyectos seleccionados, con especial atención '
-		+ 'a la exposición detallada de la documentación gráfica y en concreto, al proceso proyectual y a los aspectos y detalles '
-		+ 'constructivos más singulares de cada obra.',
+		+ 'tanto en el &aacute;mbito nacional como en el internacional.',
+		croquis2: 'Publica las obras de mayor inter&eacute;s que se producen en campo de la arquitectura a nivel mundial, as&iacute; como cuidadas monograf&iacute;as que '
+		+ 'analizan el trabajo de los arquitectos m&aacute;s sobresalientes.',
+		croquis3: 'El contenido de la revista se centra en la publicaci&oacute;n, de forma exhaustiva, de los proyectos seleccionados, con especial atenci&oacute;n '
+		+ 'a la exposici&oacute;n detallada de la documentación gr&aacute;fica y en concreto, al proceso proyectual y a los aspectos y detalles '
+		+ 'constructivos m&aacute;s singulares de cada obra.',
 		features1_title: 'Tirada',
 		features1_text: '20.000 ejemplares, sometida al control de la OJD.',
 		features2_title: 'Formato',

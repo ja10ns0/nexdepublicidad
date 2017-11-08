@@ -1,3 +1,4 @@
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -47,8 +48,17 @@ body{
 		}
 		
 		.navbar-nav li.languages{
-	  		display: inline-flex;
 		}
+		
+		.navbar-nav li{
+			&.languages {
+				display: inline-flex;
+			}
+			&.highlight {
+				font-weight: bold;
+			}
+		}
+
 		
 		
 		.navbar-toggle {
@@ -104,10 +114,26 @@ ul.navbar-nav {
 	.team-member {
 		border: 20px solid transparent;
 		text-align: center;
+		img.opacity {
+			opacity: 0.2;
+		}
 	}
 
 	.team-name {
 		text-align: center;
+	}
+
+	.team-mail {
+		position: absolute;
+		top: 46.5%;
+		left: 50%;
+		transform: translateX(-50%);
+		&.hidden{
+			visibility: hidden;
+		}
+		a{
+			color: #f07d00;
+		}
 	}
 
 	.logo {

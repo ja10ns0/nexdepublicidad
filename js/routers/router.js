@@ -30,7 +30,7 @@ Nexapp.Router = Backbone.Router.extend({
 		// setting current section
 		this.currentSection = new Nexapp[section + 'View']({ controller: this });
 		// rendering navbar
-		this.navbarView.render();
+		this.navbarView.render(section);
 		// rendering current section
 		$('section').html(this.currentSection.el);
 		// callback

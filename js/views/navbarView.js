@@ -29,11 +29,13 @@ Nexapp.NavbarView = Backbone.View.extend({
 
     initialize: function (options) {
         this.controller = options.controller;
-        this.render();
+        this.render('Home');
     },
 
-    render: function () {
+    render: function (options) {
         this.$el.html(this.template());
+        $(this.el).find('li.highlight').removeClass('highlight');
+        this.$el.find('a[href="#' + options + '"]').parent().addClass('highlight');
     },
 
     collapse: function (event) {
