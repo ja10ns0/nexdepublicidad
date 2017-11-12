@@ -185,7 +185,7 @@ var NEXTORIA_TYPES = {
         },
         14 : {
             title: 'Ars Sacra',
-            edition: 'Patrimonio Cultural, Archivos, Artes Pl&aacute;sticas, Arquitectura y M&uacut;sica',
+            edition: 'Patrimonio Cultural, Archivos, Artes Pl&aacute;sticas, Arquitectura y M&uacute;sica',
             leadership: '&Aacute;ngel Sancho',
             src: 'assets/img/arquitectura/GRID_ARS_SACRA.jpg'
         },
