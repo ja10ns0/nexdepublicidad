@@ -225,94 +225,100 @@ section {
     /* line 262, custom.scss */
     section #nextoria-section .content .current {
       color: #f07d00; }
-  /* line 267, custom.scss */
+    /* line 265, custom.scss */
+    section #nextoria-section .content ul li {
+      cursor: pointer; }
+    /* line 268, custom.scss */
+    section #nextoria-section .content img {
+      cursor: pointer; }
+  /* line 273, custom.scss */
   section #contact-section .content {
     padding-top: 20px;
     margin-bottom: 35px; }
-    /* line 270, custom.scss */
+    /* line 276, custom.scss */
     section #contact-section .content .col-sm-4 {
       text-align: center;
       padding-top: 20px;
       padding-bottom: 50px; }
-    /* line 275, custom.scss */
+    /* line 281, custom.scss */
     section #contact-section .content #map {
       min-height: 600px; }
-    /* line 278, custom.scss */
+    /* line 284, custom.scss */
     section #contact-section .content a, section #contact-section .content p {
       color: #f07d00; }
-    /* line 281, custom.scss */
+    /* line 287, custom.scss */
     section #contact-section .content a:hover {
       color: #f07d00; }
 
-/* line 288, custom.scss */
+/* line 294, custom.scss */
 .right {
   text-align: right; }
 
-/* line 292, custom.scss */
+/* line 298, custom.scss */
 .bg-white {
   background-color: white; }
 
-/* line 296, custom.scss */
+/* line 302, custom.scss */
 .bg-transparent {
   background-color: transparent; }
 
-/* line 304, custom.scss */
+/* line 310, custom.scss */
 .contact-section .header .col-sm-8 {
   color: red; }
 
 @media (max-width: 767px) {
-  /* line 311, custom.scss */
+  /* line 317, custom.scss */
   .navbar-collapse {
     position: relative;
     top: 25px; } }
-/* line 317, custom.scss */
+/* line 323, custom.scss */
 div.prueba1 {
   border: 1px solid red; }
 
-/* line 321, custom.scss */
+/* line 327, custom.scss */
 div.prueba2 {
   border: 1px solid green; }
-  /* line 324, custom.scss */
+  /* line 330, custom.scss */
   div.prueba2 .izda {
     background-color: red;
     height: 100px; }
-  /* line 328, custom.scss */
+  /* line 334, custom.scss */
   div.prueba2 .dcha {
     background-color: grey; }
 
-/* line 335, custom.scss */
+/* line 341, custom.scss */
 #nextoriaModal .modal-content {
   border-radius: 2px; }
-  /* line 337, custom.scss */
+  /* line 343, custom.scss */
   #nextoriaModal .modal-content .modal-header {
     border-bottom: none; }
-    /* line 339, custom.scss */
+    /* line 345, custom.scss */
     #nextoriaModal .modal-content .modal-header .close {
       color: #f07d00;
       opacity: 1; }
-  /* line 346, custom.scss */
+  /* line 352, custom.scss */
   #nextoriaModal .modal-content .modal-body .nextoriaModal_info h2.title_text {
     color: #f07d00; }
-/* line 353, custom.scss */
+/* line 359, custom.scss */
 #nextoriaModal .nextoriaModal_info h2 {
   margin-bottom: 20px;
   text-transform: uppercase; }
-/* line 357, custom.scss */
+/* line 363, custom.scss */
 #nextoriaModal .nextoriaModal_info .edition, #nextoriaModal .nextoriaModal_info .leadership {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold; }
-/* line 363, custom.scss */
+/* line 369, custom.scss */
 #nextoriaModal .modal-footer {
   border-top: none;
   color: #f07d00; }
-  /* line 366, custom.scss */
+  /* line 372, custom.scss */
   #nextoriaModal .modal-footer span {
     cursor: pointer; }
-    /* line 368, custom.scss */
+    /* line 374, custom.scss */
     #nextoriaModal .modal-footer span[id='0'] {
       float: left; }
-    /* line 371, custom.scss */
+    /* line 377, custom.scss */
     #nextoriaModal .modal-footer span.disabled {
       display: none;
       pointer-events: none; }

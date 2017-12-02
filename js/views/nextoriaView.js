@@ -271,13 +271,13 @@ var NEXTORIA_TYPES = {
             title: 'DE DISEÑO',
             edition: 'Editorial El Croquis',
             leadership: 'Juli Capella / Quim Larrea / Pierluigi Cattermole',
-            src:'assets/img/diseño/GRID_ARDI.jpg'
+            src:'assets/img/diseno/GRID_ARDI.jpg'
         },
         27 : {
             title: 'Ardi',
             edition: 'Grupo Zeta',
             leadership: 'Juli Capella / Quim Larrea',
-            src:'assets/img/diseño/GRID_DEDISENO.jpg'
+            src:'assets/img/diseno/GRID_DEDISENO.jpg'
         }
     },
 

@@ -124,7 +124,7 @@ Nexapp.templateManager = new Nexapp.TemplateManager();
 Nexapp.i18n = new Nexapp.i18n();
 
 // Set language
-Nexapp.language = navigator.language || 'es';
+Nexapp.language = 'es-ES';
 
 // Event bus
 Nexapp.EventBus = _.extend({}, Backbone.Events)

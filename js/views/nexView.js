@@ -25,8 +25,8 @@ Nexapp.NexView = Backbone.View.extend({
     },
 
     toggleMail: function(e) {
-        $(event.target).toggleClass('opacity');
-        $(_.last($(event.target).siblings())).toggleClass('hidden');
+        $(e.target).toggleClass('opacity');
+        $(_.last($(e.target).siblings())).toggleClass('hidden');
     }
 
 });

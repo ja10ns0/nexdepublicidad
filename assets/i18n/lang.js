@@ -1,7 +1,7 @@
 var Nexapp = Nexapp || {};
 
 Nexapp.i18n_string = {
-	es: {
+	'es-ES': {
 		nav_home: 'home',
 		nav_nex: 'nex',
 		nav_croquis: 'el croquis',
@@ -41,7 +41,7 @@ Nexapp.i18n_string = {
 		features6_title: 'Distribuci&oacute;n internacional',
 		features6_text1: 'Internacional: 11.000 ejemplares, 3.900 suscripciones.',
 		features6_text2: 'Europa 55,95% Asia-Pac&iacute;fico 23,54% Sudam&eacute;rica 8,66% Norteam&eacute;rica 7,98% Australia 2,01%',
-		croquisMsg1: 'Tarifas de publicidad 2017',
+		croquisMsg1: 'Tarifas de publicidad 2018',
 		croquisMsg2: '¿M&aacute;s informaci&oacute;n sobre El Croquis?',
 		croquisMsg3: 'Pulsa aqu&iacute;',
 		price1_title: '1ª impar',
@@ -64,6 +64,7 @@ Nexapp.i18n_string = {
 		contact1: 'Ll&aacute;manos',
 		contact2: 'Vis&iacute;tanos',
 		contact3: 'Env&iacute;anos un email',
+		nextoria_header: 'Nextoria',
 		nextoria_edition: 'Edici&oacute;n',
 		nextoria_leadership: 'Directores',
 		nextoria_arquitectura: 'arquitectura',
@@ -75,7 +76,7 @@ Nexapp.i18n_string = {
 		nextoria_culturales: 'culturales'
 	},
 
-	en: {
+	'en-EN': {
 		nav_home: 'home',
 		nav_nex: 'nex',
 		nav_croquis: 'el croquis',
@@ -111,7 +112,7 @@ Nexapp.i18n_string = {
 		features6_title: 'International distribution',
 		features6_text1: 'Internacional: 11.000 ejemplares, 3.900 suscripciones.',
 		features6_text2: 'Europe 55,95% Asia-Pacific 23,54% Sudamérica 8,66% North America 7,98% Australia 2,01%',
-		croquisMsg1: 'Mediakit 2017',
+		croquisMsg1: 'Mediakit 2018',
 		croquisMsg2: '¿Need more info about El Croquis?',
 		croquisMsg3: 'Click here',
 		price1_title: '1st odd',
@@ -134,6 +135,7 @@ Nexapp.i18n_string = {
 		contact1: 'Call us',
 		contact2: 'Visit us',
 		contact3: 'Email us at',
+		nextoria_header: 'Nextory',		
 		nextoria_edition: 'Edition',
 		nextoria_leadership: 'Leadership',
 		nextoria_arquitectura: 'architecture',
