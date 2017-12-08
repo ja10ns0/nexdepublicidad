@@ -11,8 +11,8 @@ Nexapp.NexView = Backbone.View.extend({
     template: Nexapp.getTemplate('nexView'),
 
     events : {
-        'mouseover .team-member img':'toggleMail',
-        'mouseleave .team-member img':'toggleMail'
+        'mouseover .team-member img':'showMail',
+        'mouseleave .team-member':'hideMail'
     },
 
     initialize: function (options) {
@@ -24,9 +24,13 @@ Nexapp.NexView = Backbone.View.extend({
         this.$el.html(this.template());
     },
 
-    toggleMail: function(e) {
-        $(e.target).toggleClass('opacity');
-        $(_.last($(e.target).siblings())).toggleClass('hidden');
+    showMail: function(e) {
+        $(e.target).addClass('opacity');
+        $(_.last($(e.target).siblings())).removeClass('hidden');
+    },
+    
+    hideMail: function(e) {
+        $(e.target).find('img').removeClass('opacity');
+        $(_.last($(e.target).children())).addClass('hidden');
     }
-
 });
