@@ -23,6 +23,8 @@ Nexapp.CroquisView = Backbone.View.extend({
 
 	_afterRender: function () {
 
+		var self = this;
+
 		var img1 = 'assets/img/189.jpg';
 		var img2 = 'assets/img/190.jpg';
 		var img3 = 'assets/img/191.jpg';
@@ -32,16 +34,23 @@ Nexapp.CroquisView = Backbone.View.extend({
 
 		var fade = function (img) {
 			$("#fadein img")
-			.fadeOut(2000, function () { $("#fadein img").attr('src', img); })
-			.fadeIn(2000);
+				.fadeOut(2000, function () { $("#fadein img").attr('src', img); })
+				.fadeIn(2000);
 		}
-		setInterval(function () {
-			for (var i = 0; i < images.length; i++) { 
-				fade(images[i]); 
+		this.timer = setInterval(function () {
+			initValue = self.initialized ? 0 : 1;
+			var t0 = performance.now();
+			for (var i = initValue; i < images.length; i++) {
+				self.initialized = true;
+				fade(images[i]);
 			}
-		}, 4000);
+			var t1 = performance.now();
+			console.log('tiempo: ' + (t1 - t0));
+		}, 2000, self);
+	},
 
-
+	remove: function () {
+		Backbone.View.prototype.remove.call(this);
+		clearInterval(this.timer);
 	}
-
 });
