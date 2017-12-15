@@ -82,10 +82,25 @@ Nexapp.NextoriaView = Backbone.View.extend({
     },
 
     _insertContent: function(magazine) {
+
         $('.nextoriaModal_img img').attr('src',magazine.src);
         $('.nextoriaModal_info .title_text').html(magazine.title);
-        $('.nextoriaModal_info .edition_text').html(magazine.edition);
-        $('.nextoriaModal_info .leadership_text').html(magazine.leadership);
+
+        var editionHtmlWrapper = $('.nextoriaModal_info .edition_text').parent();
+        if (magazine.edition) {
+            editionHtmlWrapper.show();
+            $('.nextoriaModal_info .edition_text').html(magazine.edition);
+        } else {
+            $('.nextoriaModal_info .edition_text').parent().hide();            
+        }
+        
+        var leadershipHtmlWrapper = $('.nextoriaModal_info .leadership_text').parent();
+        if (magazine.leadership) {
+            leadershipHtmlWrapper.show();
+            $('.nextoriaModal_info .leadership_text').html(magazine.leadership);
+        } else {
+            $('.nextoriaModal_info .leadership_text').parent().hide();
+        }
     },
 
     _checkMagazineIndex: function(cType,cMag) {
@@ -98,7 +113,6 @@ Nexapp.NextoriaView = Backbone.View.extend({
         if(cMag == lastMag) {
             $('span[id=1]').toggleClass('disabled');
         }
-
     }
 
 });  
@@ -192,17 +206,17 @@ var NEXTORIA_TYPES = {
         15 : {
             title: 'Basa',
             edition: 'Colegio Oficial de Arquitectos de las Islas Canarias',
-            leadership: 'Federico Garc&iacutea; Barba',
+            leadership: 'Federico Garc&iacute;a Barba',
             src: 'assets/img/arquitectura/GRID_BASA.jpg'
         },
         16 : {
             title: 'BAU',
             edition: 'Colegio Oficial de Arquitectos de Castilla y Le&oacute;n y Colegio Oficial de Arquitectos de Castilla La Mancha',
-            leadership: 'Dar&iacute; &Aacute;lvarex / Alberto Combarros / Fernando de Castro',
+            leadership: 'Dar&iacute;o &Aacute;lvarez / Alberto Combarros / Fernando de Castro',
             src: 'assets/img/arquitectura/GRID_BAU.jpg'
         },
         17 : {
-            title: 'Geometr&iacute;',
+            title: 'Geometr&iacute;a',
             edition: 'Revista Semestral de Arquitectura y Urbanismo',
             leadership: 'Jos&eacute; Segu&iacute;',
             src: 'assets/img/arquitectura/GRID_GEOMETRIA.jpg'
@@ -215,7 +229,7 @@ var NEXTORIA_TYPES = {
         },
         19 : {
             title: 'Periferia',
-            edition: 'Colegio Oficial de Arquitectos de Andaluc&iacute;',
+            edition: 'Colegio Oficial de Arquitectos de Andaluc&iacute;a',
             leadership: 'Luis Ib&aacute;&ntilde;ez S&aacute;nchez / Antonio Jim&eacute;nez Torrecillas / Elisenda Monz&oacute;n / Mart&iacute;n Ram&iacute;rez P&eacute;rez',
             src: 'assets/img/arquitectura/GRID_PERIFERIA.jpg'
         },
@@ -231,13 +245,13 @@ var NEXTORIA_TYPES = {
         21: {
             title: 'Anuario 2000',
             edition: 'Colegio Superior de los Colegios de Arquitectos de Espa&ntilde;a C.S.C.A.E',
-            leadership: '-',
+            leadership: '',
             src:'assets/img/anuarios/FULL_GRID_CSAE_ANUARIO_2.jpg'
         },
         22 : {
             title: 'Anuario 2005',
             edition: 'Colegio Superior de los Colegios de Arquitectos de Espa&ntilde;a C.S.C.A.E',
-            leadership: '-',
+            leadership: '',
             src:'assets/img/anuarios/FULL_GRID_CSAE_ANUARIO_1.jpg'
         }
     },
@@ -246,13 +260,13 @@ var NEXTORIA_TYPES = {
         23 : {
             title: 'CAU',
             edition: 'Colegio Oficial de Aparejadores y Arquitectos T&eacute;cnicos de Barcelona',
-            leadership: 'Jaume Rosell',
+            leadership: '',
             src: 'assets/img/construccion/GRID_CAU.jpg'
         },
         24 : {
             title: 'CERCHA',
             edition: 'Consejo General de Aparejadores y Arquitectos T&eacute;cnicos de Espa&ntilde;a',
-            leadership: '-',
+            leadership: '',
             src: 'assets/img/construccion/GRID_CERCHA.jpg'
         }
     },
@@ -284,13 +298,13 @@ var NEXTORIA_TYPES = {
     internacional : {
         28 : {
             title: 'Compasses',
-            edition: '-',
+            edition: '',
             leadership: 'Massimo de Falco / Marco Ferreti / Francesca Maderna',
             src:'assets/img/internacional/GRID_COMPASSES.jpg'
         },
         29 : {
             title: 'Build das architekten magazin',
-            edition: '-',
+            edition: '',
             leadership: 'Johannes Busmann',
             src:'assets/img/internacional/GRID_BUILD.jpg'
         }
@@ -300,12 +314,12 @@ var NEXTORIA_TYPES = {
         30 : {
             title: 'Deusto Business Review',
             edition: 'Ediciones Deusto',
-            leadership: '-',
+            leadership: '',
             src:'assets/img/culturales/GRID_DEUSTO.jpg'
         },
         31 : {
             title: 'IMPAR',
-            edition: '-',
+            edition: '',
             leadership: 'Mar&iacute;a Casanovas / Asunci&oacute;n Batlle / Luis Do&ntilde;ate',
             src:'assets/img/culturales/GRID_IMPAR.jpg'
         },
@@ -317,14 +331,14 @@ var NEXTORIA_TYPES = {
         },
         33 : {
             title: 'NH Hoteles',
-            edition: '-',
+            edition: '',
             leadership: 'Javier Angulo',
             src:'assets/img/culturales/GRID_NH.jpg'
         },
         34 : {
             title: 'MADRID STYLE',
             edition: 'BOOKSTYLE S.A',
-            leadership: '-',
+            leadership: '',
             src:'assets/img/culturales/GRID_LIFESTYLE_M.jpg'
         },
         35 : {
@@ -333,5 +347,5 @@ var NEXTORIA_TYPES = {
             leadership: '',
             src:'assets/img/culturales/GRID_LIFESTYLE_B.jpg'
         },
-    },
+    }
 }

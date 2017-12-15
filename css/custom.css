@@ -86,37 +86,40 @@ ul.navbar-nav {
     /* line 103, custom.scss */
     .header .col-sm-8 a[href^=tel] {
       cursor: text; }
+  /* line 109, custom.scss */
+  .header h1 {
+    margin-top: 10px; }
 
-/* line 111, custom.scss */
+/* line 115, custom.scss */
 .content {
   background-color: white; }
-  /* line 114, custom.scss */
+  /* line 118, custom.scss */
   .content .team-member {
     border: 20px solid transparent;
     text-align: center; }
-    /* line 117, custom.scss */
+    /* line 121, custom.scss */
     .content .team-member img.opacity {
       opacity: 0.2; }
-  /* line 122, custom.scss */
+  /* line 126, custom.scss */
   .content .team-name {
     text-align: center; }
-  /* line 126, custom.scss */
+  /* line 130, custom.scss */
   .content .team-mail {
     position: absolute;
     top: 46.5%;
     left: 50%;
     transform: translateX(-50%); }
-    /* line 131, custom.scss */
+    /* line 135, custom.scss */
     .content .team-mail.hidden {
       visibility: hidden; }
-    /* line 134, custom.scss */
+    /* line 138, custom.scss */
     .content .team-mail a {
       color: #f07d00; }
-  /* line 139, custom.scss */
+  /* line 143, custom.scss */
   .content .logo {
     height: 100px; }
 
-/* line 144, custom.scss */
+/* line 148, custom.scss */
 .home-section {
   height: 100vh;
   position: absolute;
@@ -126,18 +129,18 @@ ul.navbar-nav {
   /* background:linear-gradient(to right, rgba(255, 0, 0, 0.39), rgba(234, 119, 0, 0.45)),url(../assets/img/nex-background@2x.png); */
   background-size: cover;
   background-color: grey; }
-  /* line 155, custom.scss */
+  /* line 159, custom.scss */
   .home-section .slogan {
     color: white; }
-    /* line 158, custom.scss */
+    /* line 162, custom.scss */
     .home-section .slogan h1 {
       /* font-size:50px; */ }
 
-/* line 165, custom.scss */
+/* line 169, custom.scss */
 .subheader {
   text-align: center; }
 
-/* line 169, custom.scss */
+/* line 173, custom.scss */
 footer {
   color: #f07d00;
   position: fixed;
@@ -147,178 +150,178 @@ footer {
   bottom: 0;
   background-color: white;
   border-top: 1px solid #f07d00; }
-  /* line 178, custom.scss */
+  /* line 182, custom.scss */
   footer .row {
     margin: 0px; }
-    /* line 180, custom.scss */
+    /* line 184, custom.scss */
     footer .row div:first-child {
       font-size: 12px;
       line-height: 20px; }
-  /* line 185, custom.scss */
+  /* line 189, custom.scss */
   footer a {
     color: #f07d00; }
 
-/* line 190, custom.scss */
+/* line 194, custom.scss */
 .vcenter {
   min-height: 100%;
   display: flex;
   align-items: center; }
 
-/* line 196, custom.scss */
+/* line 200, custom.scss */
 .valign {
   display: inline-block;
   vertical-align: middle;
   float: none; }
 
-/* line 202, custom.scss */
+/* line 206, custom.scss */
 .center-block {
   display: inline-block; }
 
-/* line 206, custom.scss */
+/* line 210, custom.scss */
 .tcenter {
   text-align: center; }
 
-/* line 210, custom.scss */
+/* line 214, custom.scss */
 section {
   margin-top: 100px; }
-  /* line 213, custom.scss */
+  /* line 217, custom.scss */
   section #nex-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
-    /* line 216, custom.scss */
+    /* line 220, custom.scss */
     section #nex-section .content .row {
       margin: 50px 0; }
-  /* line 220, custom.scss */
+  /* line 224, custom.scss */
   section #croquis-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
-    /* line 223, custom.scss */
+    /* line 227, custom.scss */
     section #croquis-section .content .row {
       overflow: hidden;
       margin: 50px 0; }
-      /* line 228, custom.scss */
+      /* line 232, custom.scss */
       section #croquis-section .content .row.prices .col-lg-3 {
         text-align: center; }
-      /* line 231, custom.scss */
+      /* line 235, custom.scss */
       section #croquis-section .content .row.prices p.prices_title {
         color: #f07d00;
         font-weight: bold;
         margin-bottom: 5px; }
-      /* line 239, custom.scss */
+      /* line 243, custom.scss */
       section #croquis-section .content .row .valign {
         padding: 15px; }
-    /* line 245, custom.scss */
+    /* line 249, custom.scss */
     section #croquis-section .content .features p.features_title {
       border-bottom: 1px solid #f07d00;
       font-weight: bold;
       margin-bottom: 5px; }
-  /* line 253, custom.scss */
+  /* line 257, custom.scss */
   section #nextoria-section .content {
     padding-top: 20px;
     margin-bottom: 50px; }
-    /* line 256, custom.scss */
+    /* line 260, custom.scss */
     section #nextoria-section .content .row {
       margin: 50px 0; }
-    /* line 259, custom.scss */
+    /* line 263, custom.scss */
     section #nextoria-section .content #anuarios, section #nextoria-section .content #construccion, section #nextoria-section .content #paisajismo, section #nextoria-section .content #diseno, section #nextoria-section .content #internacional, section #nextoria-section .content #culturales {
       display: none; }
-    /* line 262, custom.scss */
+    /* line 266, custom.scss */
     section #nextoria-section .content .current {
       color: #f07d00; }
-    /* line 265, custom.scss */
+    /* line 269, custom.scss */
     section #nextoria-section .content ul li {
       cursor: pointer; }
-    /* line 268, custom.scss */
+    /* line 272, custom.scss */
     section #nextoria-section .content img {
       cursor: pointer; }
-  /* line 273, custom.scss */
+  /* line 277, custom.scss */
   section #contact-section .content {
     padding-top: 20px;
     margin-bottom: 35px; }
-    /* line 276, custom.scss */
+    /* line 280, custom.scss */
     section #contact-section .content .col-sm-4 {
       text-align: center;
       padding-top: 20px;
       padding-bottom: 50px; }
-    /* line 281, custom.scss */
+    /* line 285, custom.scss */
     section #contact-section .content #map {
       min-height: 600px; }
-    /* line 284, custom.scss */
+    /* line 288, custom.scss */
     section #contact-section .content a, section #contact-section .content p {
       color: #f07d00; }
-    /* line 287, custom.scss */
+    /* line 291, custom.scss */
     section #contact-section .content a:hover {
       color: #f07d00; }
 
-/* line 294, custom.scss */
+/* line 298, custom.scss */
 .right {
   text-align: right; }
 
-/* line 298, custom.scss */
+/* line 302, custom.scss */
 .bg-white {
   background-color: white; }
 
-/* line 302, custom.scss */
+/* line 306, custom.scss */
 .bg-transparent {
   background-color: transparent; }
 
-/* line 310, custom.scss */
+/* line 314, custom.scss */
 .contact-section .header .col-sm-8 {
   color: red; }
 
 @media (max-width: 767px) {
-  /* line 317, custom.scss */
+  /* line 321, custom.scss */
   .navbar-collapse {
     position: relative;
     top: 25px; } }
-/* line 323, custom.scss */
+/* line 327, custom.scss */
 div.prueba1 {
   border: 1px solid red; }
 
-/* line 327, custom.scss */
+/* line 331, custom.scss */
 div.prueba2 {
   border: 1px solid green; }
-  /* line 330, custom.scss */
+  /* line 334, custom.scss */
   div.prueba2 .izda {
     background-color: red;
     height: 100px; }
-  /* line 334, custom.scss */
+  /* line 338, custom.scss */
   div.prueba2 .dcha {
     background-color: grey; }
 
-/* line 341, custom.scss */
+/* line 345, custom.scss */
 #nextoriaModal .modal-content {
   border-radius: 2px; }
-  /* line 343, custom.scss */
+  /* line 347, custom.scss */
   #nextoriaModal .modal-content .modal-header {
     border-bottom: none; }
-    /* line 345, custom.scss */
+    /* line 349, custom.scss */
     #nextoriaModal .modal-content .modal-header .close {
       color: #f07d00;
       opacity: 1; }
-  /* line 352, custom.scss */
+  /* line 356, custom.scss */
   #nextoriaModal .modal-content .modal-body .nextoriaModal_info h2.title_text {
     color: #f07d00; }
-/* line 359, custom.scss */
+/* line 363, custom.scss */
 #nextoriaModal .nextoriaModal_info h2 {
   margin-bottom: 20px;
   text-transform: uppercase; }
-/* line 363, custom.scss */
+/* line 367, custom.scss */
 #nextoriaModal .nextoriaModal_info .edition, #nextoriaModal .nextoriaModal_info .leadership {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold; }
-/* line 369, custom.scss */
+/* line 373, custom.scss */
 #nextoriaModal .modal-footer {
   border-top: none;
   color: #f07d00; }
-  /* line 372, custom.scss */
+  /* line 376, custom.scss */
   #nextoriaModal .modal-footer span {
     cursor: pointer; }
-    /* line 374, custom.scss */
+    /* line 378, custom.scss */
     #nextoriaModal .modal-footer span[id='0'] {
       float: left; }
-    /* line 377, custom.scss */
+    /* line 381, custom.scss */
     #nextoriaModal .modal-footer span.disabled {
       display: none;
       pointer-events: none; }
