@@ -33,10 +33,10 @@ Nexapp.Router = Backbone.Router.extend({
 		this.navbarView.render(section);
 		// rendering current section
 		$('section').html(this.currentSection.el);
-		// callback
-		this._loadSectionCallback(this.currentSection);
 		// fix layout
 		this._applyStyles(section);
+		// callback
+		this._loadSectionCallback(this.currentSection);
 	},
 
 	init: function () {
