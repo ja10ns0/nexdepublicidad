@@ -357,6 +357,23 @@ div.prueba2{
 					color: #f07d00;
 				}
 			}
+			.go-next, .go-prev {
+				span{
+					color: #f07d00;
+					cursor: pointer;
+					&[id='0'] {
+						float: left;
+					}
+					&.disabled {
+						display:none;
+						pointer-events: none;
+					}
+				}
+			}
+			.go-next span{
+				float: right;
+			}
+
 		}
 	}
 	.nextoriaModal_info {

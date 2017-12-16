@@ -15,7 +15,7 @@ Nexapp.NextoriaView = Backbone.View.extend({
     events: {
         'click li': 'changeGrid',
         'click .row:not(.subheader) div[class^=col-]': 'openModal',
-        'click .modal-footer span': 'slideMag',
+        'click .modal-body span': 'slideMag',
     },
 
     initialize: function (options) {
