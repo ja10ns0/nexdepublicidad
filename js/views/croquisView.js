@@ -8,6 +8,7 @@ Nexapp.CroquisView = Backbone.View.extend({
 	controller: null,
 	id: 'croquis-section',
 	renderCallback: null,
+	isFirstInvocation: null,
 
 	template: Nexapp.getTemplate('croquisView'),
 
@@ -19,6 +20,7 @@ Nexapp.CroquisView = Backbone.View.extend({
 
 	render: function () {
 		this.$el.html(this.template());
+		this.isFirstInvocation = true;
 	},
 
 	_afterRender: function () {
@@ -31,17 +33,20 @@ Nexapp.CroquisView = Backbone.View.extend({
 		var images = [img1, img2, img3, img4];
 
 		(function animateImages(isFirstInvocation) {
-			var initValue = isFirstInvocation ? 1 : 0;
-			var fade = function (img) {
-				$("#fadein img")
-					.fadeOut(3500, function () { $("#fadein img").attr('src', img); })
-					.fadeIn(3500);
-
-			};
-			for (var i = initValue; i < images.length; i++) {
-				fade(images[i]);
+			if (isFirstInvocation) {
+				var initValue = isFirstInvocation ? 1 : 0;
+				var fade = function (img) {
+					$("#fadein img")
+						.fadeOut(3500, function () { $("#fadein img").attr('src', img); })
+						.fadeIn(3500);
+	
+				};
+				for (var i = initValue; i < images.length; i++) {
+					fade(images[i]);
+				}
+				animateImages();
+				
 			}
-			animateImages();
-		})(true);
+		})(this.isFirstInvocation);
 	}
 });

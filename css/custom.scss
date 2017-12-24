@@ -186,7 +186,7 @@ footer {
 			line-height: 20px;
 		}
 	}
-	a {
+	a,a:hover,a:visited {
 		color: #f07d00;
 	}
 }
@@ -309,18 +309,9 @@ section {
 
 .contact-section {
 	.header {
-		.title{
-		}
 		.col-sm-8{
 			color: red;
 		}
-	}
-}
-
-@media (max-width: 767px) {
-	.navbar-collapse{
-		position:relative;
-		top:25px;
 	}
 }
 
@@ -357,7 +348,7 @@ div.prueba2{
 					color: #f07d00;
 				}
 			}
-			.go-next, .go-prev {
+			.go-next-xs, .go-next-md, .go-prev {
 				span{
 					color: #f07d00;
 					cursor: pointer;
@@ -370,7 +361,7 @@ div.prueba2{
 					}
 				}
 			}
-			.go-next span{
+			.go-next-md span{
 				float: right;
 			}
 
@@ -387,18 +378,22 @@ div.prueba2{
 			font-weight: bold;
 		}
 	}
-	.modal-footer {
-		border-top:none;
-		color: #f07d00;
-		span {
-			cursor: pointer;
-			&[id='0'] {
-				float: left;
-			}
-			&.disabled {
-				display:none;
-				pointer-events: none;
-			}
-		}
+}
+
+@media (max-width: 767px) {
+
+	.navbar-collapse{
+		position:relative;
+		top:25px;
+	}
+
+	.go-next-md{
+		display:none;
+	}
+}
+
+@media (min-width:768px) {
+	.go-next-xs{
+		display:none;
 	}
 }

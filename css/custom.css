@@ -158,7 +158,7 @@ footer {
       font-size: 12px;
       line-height: 20px; }
   /* line 189, custom.scss */
-  footer a {
+  footer a, footer a:hover, footer a:visited {
     color: #f07d00; }
 
 /* line 194, custom.scss */
@@ -265,79 +265,74 @@ section {
 .bg-transparent {
   background-color: transparent; }
 
-/* line 314, custom.scss */
+/* line 312, custom.scss */
 .contact-section .header .col-sm-8 {
   color: red; }
 
-@media (max-width: 767px) {
-  /* line 321, custom.scss */
-  .navbar-collapse {
-    position: relative;
-    top: 25px; } }
-/* line 327, custom.scss */
+/* line 318, custom.scss */
 div.prueba1 {
   border: 1px solid red; }
 
-/* line 331, custom.scss */
+/* line 322, custom.scss */
 div.prueba2 {
   border: 1px solid green; }
-  /* line 334, custom.scss */
+  /* line 325, custom.scss */
   div.prueba2 .izda {
     background-color: red;
     height: 100px; }
-  /* line 338, custom.scss */
+  /* line 329, custom.scss */
   div.prueba2 .dcha {
     background-color: grey; }
 
-/* line 345, custom.scss */
+/* line 336, custom.scss */
 #nextoriaModal .modal-content {
   border-radius: 2px; }
-  /* line 347, custom.scss */
+  /* line 338, custom.scss */
   #nextoriaModal .modal-content .modal-header {
     border-bottom: none; }
-    /* line 349, custom.scss */
+    /* line 340, custom.scss */
     #nextoriaModal .modal-content .modal-header .close {
       color: #f07d00;
       opacity: 1; }
-  /* line 356, custom.scss */
+  /* line 347, custom.scss */
   #nextoriaModal .modal-content .modal-body .nextoriaModal_info h2.title_text {
     color: #f07d00; }
-  /* line 361, custom.scss */
-  #nextoriaModal .modal-content .modal-body .go-next span, #nextoriaModal .modal-content .modal-body .go-prev span {
+  /* line 352, custom.scss */
+  #nextoriaModal .modal-content .modal-body .go-next-xs span, #nextoriaModal .modal-content .modal-body .go-next-md span, #nextoriaModal .modal-content .modal-body .go-prev span {
     color: #f07d00;
     cursor: pointer; }
-    /* line 364, custom.scss */
-    #nextoriaModal .modal-content .modal-body .go-next span[id='0'], #nextoriaModal .modal-content .modal-body .go-prev span[id='0'] {
+    /* line 355, custom.scss */
+    #nextoriaModal .modal-content .modal-body .go-next-xs span[id='0'], #nextoriaModal .modal-content .modal-body .go-next-md span[id='0'], #nextoriaModal .modal-content .modal-body .go-prev span[id='0'] {
       float: left; }
-    /* line 367, custom.scss */
-    #nextoriaModal .modal-content .modal-body .go-next span.disabled, #nextoriaModal .modal-content .modal-body .go-prev span.disabled {
+    /* line 358, custom.scss */
+    #nextoriaModal .modal-content .modal-body .go-next-xs span.disabled, #nextoriaModal .modal-content .modal-body .go-next-md span.disabled, #nextoriaModal .modal-content .modal-body .go-prev span.disabled {
       display: none;
       pointer-events: none; }
-  /* line 373, custom.scss */
-  #nextoriaModal .modal-content .modal-body .go-next span {
+  /* line 364, custom.scss */
+  #nextoriaModal .modal-content .modal-body .go-next-md span {
     float: right; }
-/* line 380, custom.scss */
+/* line 371, custom.scss */
 #nextoriaModal .nextoriaModal_info h2 {
   margin-bottom: 20px;
   text-transform: uppercase; }
-/* line 384, custom.scss */
+/* line 375, custom.scss */
 #nextoriaModal .nextoriaModal_info .edition, #nextoriaModal .nextoriaModal_info .leadership {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold; }
-/* line 390, custom.scss */
-#nextoriaModal .modal-footer {
-  border-top: none;
-  color: #f07d00; }
-  /* line 393, custom.scss */
-  #nextoriaModal .modal-footer span {
-    cursor: pointer; }
-    /* line 395, custom.scss */
-    #nextoriaModal .modal-footer span[id='0'] {
-      float: left; }
-    /* line 398, custom.scss */
-    #nextoriaModal .modal-footer span.disabled {
-      display: none;
-      pointer-events: none; }
+
+@media (max-width: 767px) {
+  /* line 385, custom.scss */
+  .navbar-collapse {
+    position: relative;
+    top: 25px; }
+
+  /* line 390, custom.scss */
+  .go-next-md {
+    display: none; } }
+@media (min-width: 768px) {
+  /* line 396, custom.scss */
+  .go-next-xs {
+    display: none; } }
 
 /*# sourceMappingURL=custom.css.map */
