@@ -104,7 +104,7 @@ Nexapp.NextoriaView = Backbone.View.extend({
     },
 
     _checkMagazineIndex: function(cType,cMag) {
-        $('.go-prev span,.go-next span, .go-next-md span').removeClass('disabled');
+        $('.go-prev span,.go-next-xs span,.go-next span, .go-next-md span').removeClass('disabled');
         var firstMag = _.first(_.keys(NEXTORIA_TYPES[cType]));
         var lastMag = _.last(_.keys(NEXTORIA_TYPES[cType]));
         if(cMag == firstMag) {
