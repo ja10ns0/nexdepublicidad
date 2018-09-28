@@ -8,7 +8,6 @@ Nexapp.CroquisView = Backbone.View.extend({
 	controller: null,
 	id: 'croquis-section',
 	renderCallback: null,
-	isFirstInvocation: null,
 
 	template: Nexapp.getTemplate('croquisView'),
 
@@ -20,33 +19,22 @@ Nexapp.CroquisView = Backbone.View.extend({
 
 	render: function () {
 		this.$el.html(this.template());
-		this.isFirstInvocation = true;
 	},
 
 	_afterRender: function () {
+		var slideIndex = 0;
+		carousel();
 
-		var img1 = 'assets/img/189.jpg';
-		var img2 = 'assets/img/190.jpg';
-		var img3 = 'assets/img/191.jpg';
-		var img4 = 'assets/img/192.jpg';
-
-		var images = [img1, img2, img3, img4];
-
-		(function animateImages(isFirstInvocation) {
-			if (isFirstInvocation) {
-				var initValue = isFirstInvocation ? 1 : 0;
-				var fade = function (img) {
-					$("#fadein img")
-						.fadeOut(3500, function () { $("#fadein img").attr('src', img); })
-						.fadeIn(3500);
-	
-				};
-				for (var i = initValue; i < images.length; i++) {
-					fade(images[i]);
-				}
-				animateImages();
-				
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("img-croquis");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 	
 			}
-		})(this.isFirstInvocation);
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1} 
+			x[slideIndex-1].style.display = "block";
+			setTimeout(carousel, 5000); 
+		}
 	}
 });

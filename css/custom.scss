@@ -397,3 +397,36 @@ div.prueba2{
 		display:none;
 	}
 }
+
+
+.img-croquis {
+	-webkit-animation: fade 5s;
+	animation: fade 5s;
+	-moz-animation: fade 5s;
+	-o-animation: fade 5s;
+	}
+	
+	@-webkit-keyframes fade {
+		0% {opacity: 0} 
+		50% {opacity: 1}
+		100% {opacity:0}
+	}
+	
+	@-moz-keyframes fade{
+		0% {opacity: 0} 
+	  	50% {opacity: 1}
+	  	100% {opacity:0}  
+	}
+	
+	@keyframes fade {
+	  	0% {opacity: 0} 
+	  	50% {opacity: 1}
+	  	100%{opacity: 0}
+		}
+
+	@-o-keyframes fade {
+		0% {opacity: 0} 
+	  	50% {opacity: 1}
+	  	100%{opacity: 0}
+	
+	}
